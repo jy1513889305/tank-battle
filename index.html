@@ -289,7 +289,8 @@
     }
 
     function createPlayer() {
-      return new Tank(WIDTH / 2, HEIGHT / 2, "#4caf50", true);
+      // 避免在地图中央的障碍物处重生
+      return new Tank(80, 80, "#4caf50", true);
     }
 
     function createObstacles() {
